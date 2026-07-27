@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menu — Crocodilos</title>
+<meta name="description" content="11 beers on tap, 218+ cans &amp; bottles, and snacks at Crocodilos Taps &amp; Bottleshop, Toumpa, Thessaloniki." />
+<link rel="icon" type="image/jpeg" href="assets/img/logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<a class="visually-hidden" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo-mark" aria-label="Crocodilos home">
+      <img src="assets/img/logo.jpg" alt="Crocodilos logo" width="40" height="40" />
+      Crocodilos
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="menu.html" aria-current="page">Menu</a>
+      <a href="events.html">Events</a>
+      <a href="merch.html">Merch</a>
+      <a href="index.html#visit">Visit</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-gold btn-sm" href="index.html#visit">Find Us</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="menu.html" aria-current="page">Menu</a>
+    <a href="events.html">Events</a>
+    <a href="merch.html">Merch</a>
+    <a href="index.html#visit">Visit</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero section--tight">
+    <div class="container">
+      <p class="eyebrow">Taps &amp; Bottleshop</p>
+      <h1 class="h-display" style="font-size: clamp(2.5rem, 4vw + 1rem, 5rem);">On tap<br>&amp; in hand</h1>
+      <p class="lede">11 beers pouring right now, 218+ cans &amp; bottles in the fridge, and something to eat while you work through them. Prices at the bar — ask your bartender.</p>
+      <div class="hero__actions">
+        <a class="btn btn-purple" href="#tap">On Tap</a>
+        <a class="btn btn-purple" href="#bottles">Cans &amp; Bottles</a>
+        <a class="btn btn-purple" href="#snacks">Snacks</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="teeth-divider" aria-hidden="true">
+    <svg viewBox="0 0 120 20" preserveAspectRatio="none"><path d="M0,20 L10,0 L20,20 L30,0 L40,20 L50,0 L60,20 L70,0 L80,20 L90,0 L100,20 L110,0 L120,20 Z" fill="var(--color-purple)"/></svg>
+  </div>
+
+  <section class="section section--alt" id="tap">
+    <div class="container">
+      <div class="menu-category">
+        <div class="menu-category__head">
+          <h2 class="h-md">On Tap</h2>
+          <span class="eyebrow">11 beers, live from Untappd</span>
+        </div>
+        <div id="tap-list" class="beer-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="teeth-divider" aria-hidden="true">
+    <svg viewBox="0 0 120 20" preserveAspectRatio="none"><path d="M0,20 L10,0 L20,20 L30,0 L40,20 L50,0 L60,20 L70,0 L80,20 L90,0 L100,20 L110,0 L120,20 Z" fill="var(--color-ink)"/></svg>
+  </div>
+
+  <section class="section" id="bottles">
+    <div class="container">
+      <div class="menu-category">
+        <div class="menu-category__head">
+          <h2 class="h-md">Cans &amp; Bottles</h2>
+          <span class="eyebrow">The full bottleshop</span>
+        </div>
+
+        <div class="beer-search-wrap">
+          <label class="visually-hidden" for="bottle-search">Search cans &amp; bottles by name, brewery or style</label>
+          <input type="search" id="bottle-search" class="beer-search" placeholder="Search by name, brewery or style…" />
+          <p id="bottle-search-meta" class="beer-search-meta">218 beers, always rotating — browse by category or search.</p>
+        </div>
+
+        <div id="bottle-groups"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="teeth-divider" aria-hidden="true">
+    <svg viewBox="0 0 120 20" preserveAspectRatio="none"><path d="M0,20 L10,0 L20,20 L30,0 L40,20 L50,0 L60,20 L70,0 L80,20 L90,0 L100,20 L110,0 L120,20 Z" fill="var(--color-purple)"/></svg>
+  </div>
+
+  <section class="section section--alt" id="snacks">
+    <div class="container">
+
+      <div class="sample-banner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 16.5h.01"/><path d="M10.3 3.9 2.5 17.5A1.8 1.8 0 0 0 4 20.2h16a1.8 1.8 0 0 0 1.5-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0z"/></svg>
+        <span><strong>Sample food menu</strong>Beers above are real and pulled from Untappd. Food items, descriptions and prices below are placeholders — send the real line-up whenever it's ready.</span>
+      </div>
+
+      <div class="menu-category">
+        <div class="menu-category__head">
+          <h2 class="h-md">Snacks &amp; Hot Dogs</h2>
+          <span class="eyebrow">Something to soak it up</span>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item">
+            <p class="menu-item__name">Classic Dog</p>
+            <p class="menu-item__price">€5.50</p>
+            <p class="menu-item__meta">Grilled frank · mustard, ketchup, crispy onions</p>
+          </div>
+          <div class="menu-item">
+            <p class="menu-item__name">Croc Dog</p>
+            <p class="menu-item__price">€6.50</p>
+            <p class="menu-item__meta">House special · chili, cheddar, jalapeños</p>
+          </div>
+          <div class="menu-item">
+            <p class="menu-item__name">Cheesy Dog</p>
+            <p class="menu-item__price">€6.00</p>
+            <p class="menu-item__meta">Melted cheddar, crispy bacon bits</p>
+          </div>
+          <div class="menu-item">
+            <p class="menu-item__name">Potato Chips</p>
+            <p class="menu-item__price">€3.00</p>
+            <p class="menu-item__meta">Salted, served in the bag</p>
+          </div>
+          <div class="menu-item">
+            <p class="menu-item__name">Loaded Fries</p>
+            <p class="menu-item__price">€5.50</p>
+            <p class="menu-item__meta">Cheese sauce, bacon bits, spring onion</p>
+          </div>
+          <div class="menu-item">
+            <p class="menu-item__name">Pretzel &amp; Beer Cheese</p>
+            <p class="menu-item__price">€4.50</p>
+            <p class="menu-item__meta">Warm soft pretzel, house beer-cheese dip</p>
+          </div>
+          <div class="menu-item">
+            <p class="menu-item__name">Nachos</p>
+            <p class="menu-item__price">€6.00</p>
+            <p class="menu-item__meta">Tortilla chips, cheese sauce, jalapeños, salsa</p>
+          </div>
+          <div class="menu-item">
+            <p class="menu-item__name">Mixed Nuts &amp; Snacks Bowl</p>
+            <p class="menu-item__price">€3.50</p>
+            <p class="menu-item__meta">Because someone has to order something small</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="teeth-divider" aria-hidden="true">
+    <svg viewBox="0 0 120 20" preserveAspectRatio="none"><path d="M0,20 L10,0 L20,20 L30,0 L40,20 L50,0 L60,20 L70,0 L80,20 L90,0 L100,20 L110,0 L120,20 Z" fill="var(--color-purple)"/></svg>
+  </div>
+
+  <section class="section section--dark section--tight text-center">
+    <div class="container stack">
+      <h2 class="h-lg">Not sure where to start?</h2>
+      <p class="lede" style="margin-inline: auto; opacity: 0.9;">Tell your bartender what you usually drink — they'll find you something from the fridge.</p>
+      <p><a class="btn btn-gold" href="index.html#visit">Find Us</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo-mark" style="color: var(--color-cream);" aria-label="Crocodilos home">
+          <img src="assets/img/logo.jpg" alt="Crocodilos logo" width="40" height="40" />
+          Crocodilos
+        </a>
+        <p style="margin-top: var(--space-2); opacity: 0.75; max-width: 32ch;">A beer bar in Toumpa, Thessaloniki. Cold-blooded reptile, warm-blooded welcome.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/crocodilos_skg/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H8v3h3v7h3v-7h3l1-3h-4v-2a1 1 0 0 1 1-1z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="merch.html">Merch</a></li>
+          <li><a href="index.html#visit">Visit</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Visit</h3>
+        <ul>
+          <li>Vosporou 1, 54454 Thessaloniki</li>
+          <li>Daily 18:00 – 01:30</li>
+          <li><a href="https://www.instagram.com/crocodilos_skg/" target="_blank" rel="noopener">@crocodilos_skg</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Crocodilos. All beers reserved.</p>
+      <p>Toumpa, Thessaloniki, Greece</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/beer-data.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
