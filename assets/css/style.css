@@ -141,7 +141,7 @@ button { font: inherit; cursor: pointer; }
 .btn:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--color-ink); }
 .btn:active { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--color-ink); }
 .btn-gold { background: var(--color-yellow); color: var(--color-ink); }
-.btn-purple { background: var(--color-purple); color: var(--color-ink); border-color: var(--color-ink); }
+.btn-purple { background: var(--color-purple); color: var(--color-cream); border-color: var(--color-ink); }
 .btn-outline { background: transparent; color: var(--color-cream); border-color: var(--color-cream); box-shadow: var(--shadow-sticker); }
 .btn-outline:hover { box-shadow: 8px 8px 0 var(--color-cream); }
 .btn-sm { min-height: 44px; padding: 0.55rem 1.25rem; font-size: 0.875rem; box-shadow: var(--shadow-sticker-sm); }
