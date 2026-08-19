@@ -51,14 +51,8 @@
 
 <main id="main">
 
-  <section class="hero hero--photo section--tight">
-    <div class="hero__carousel" aria-hidden="true">
-      <div class="hero__slide is-active" style="background-image: url('assets/img/gallery/croc-7.webp');"></div>
-      <div class="hero__slide" style="background-image: url('assets/img/gallery/croc-1.webp');"></div>
-      <div class="hero__slide" style="background-image: url('assets/img/gallery/croc-3.webp');"></div>
-      <div class="hero__slide" style="background-image: url('assets/img/gallery/croc-2.webp');"></div>
-      <div class="hero__overlay"></div>
-    </div>
+  <section class="hero hero--photo section--tight" style="background-image: url('assets/img/gallery/croc-7.webp'); background-size: cover; background-position: center;">
+    <div class="hero__overlay"></div>
     <div class="container">
       <p class="eyebrow">Taps &amp; Bottles</p>
       <h1 class="h-display" style="font-size: clamp(2.5rem, 4vw + 1rem, 5rem);">On tap<br>&amp; in hand</h1>
@@ -68,12 +62,6 @@
         <a class="btn btn-purple" href="#bottles">Cans &amp; Bottles</a>
         <a class="btn btn-purple" href="#snacks">Snacks</a>
       </div>
-    </div>
-    <div class="hero__dots" role="tablist" aria-label="Bar photos">
-      <button class="hero__dot is-active" type="button" aria-label="Show photo 1" data-index="0"></button>
-      <button class="hero__dot" type="button" aria-label="Show photo 2" data-index="1"></button>
-      <button class="hero__dot" type="button" aria-label="Show photo 3" data-index="2"></button>
-      <button class="hero__dot" type="button" aria-label="Show photo 4" data-index="3"></button>
     </div>
   </section>
 
@@ -231,7 +219,6 @@
 
 <script src="assets/js/beer-data.js"></script>
 <script src="assets/js/menu.js"></script>
-<script src="assets/js/hero-carousel.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
