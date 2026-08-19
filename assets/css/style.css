@@ -326,7 +326,7 @@ button { font: inherit; cursor: pointer; }
   background: linear-gradient(180deg, rgba(29, 18, 41, 0.35) 0%, rgba(29, 18, 41, 0.6) 55%, rgba(88, 40, 128, 0.8) 100%);
 }
 .hero--photo {
-  min-height: 60vh;
+  min-height: 78vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
