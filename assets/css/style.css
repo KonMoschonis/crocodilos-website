@@ -384,6 +384,16 @@ button { font: inherit; cursor: pointer; }
   overflow: hidden;
 }
 .card__media svg { width: 46%; }
+.card__media img {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  background: var(--color-cream);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  box-shadow: 4px 4px 0 rgba(29, 18, 41, 0.35);
+}
 .card__title { font-family: var(--font-display); font-weight: 900; font-size: 1.35rem; text-transform: uppercase; }
 .card__meta { font-size: 0.85rem; color: var(--color-purple); font-weight: 600; }
 .card__price {
