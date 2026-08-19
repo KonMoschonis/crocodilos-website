@@ -58,7 +58,14 @@
 
 <main id="main">
 
-  <section class="hero">
+  <section class="hero hero--photo">
+    <div class="hero__carousel" aria-hidden="true">
+      <div class="hero__slide is-active" style="background-image: url('assets/img/gallery/croc-1.webp');"></div>
+      <div class="hero__slide" style="background-image: url('assets/img/gallery/croc-2.webp');"></div>
+      <div class="hero__slide" style="background-image: url('assets/img/gallery/croc-3.webp');"></div>
+      <div class="hero__slide" style="background-image: url('assets/img/gallery/croc-7.webp');"></div>
+      <div class="hero__overlay"></div>
+    </div>
     <div class="container hero__grid">
       <div>
         <img class="hero__logo" src="assets/img/logo.jpg" alt="Crocodilos logo" width="160" height="160" />
@@ -70,6 +77,12 @@
           <a class="btn btn-purple" href="events.html">Upcoming Events</a>
         </div>
       </div>
+    </div>
+    <div class="hero__dots" role="tablist" aria-label="Bar photos">
+      <button class="hero__dot is-active" type="button" aria-label="Show photo 1" data-index="0"></button>
+      <button class="hero__dot" type="button" aria-label="Show photo 2" data-index="1"></button>
+      <button class="hero__dot" type="button" aria-label="Show photo 3" data-index="2"></button>
+      <button class="hero__dot" type="button" aria-label="Show photo 4" data-index="3"></button>
     </div>
   </section>
 
@@ -180,31 +193,27 @@
       <p class="eyebrow">Inside &amp; out</p>
       <h2 class="h-xl" style="margin-top: var(--space-2)">Photos from the bar</h2>
 
-      <div class="sample-banner" style="margin-top: var(--space-4); margin-bottom: 0;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 16.5h.01"/><path d="M10.3 3.9 2.5 17.5A1.8 1.8 0 0 0 4 20.2h16a1.8 1.8 0 0 0 1.5-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0z"/></svg>
-        <span><strong>Photo gallery placeholder</strong>Drop real interior/exterior shots into <code>assets/img/gallery/</code> and swap these tiles for <code>&lt;img&gt;</code> tags whenever you send them over.</span>
-      </div>
-
       <div class="gallery-grid">
-        <div class="gallery-tile gallery-tile--wide" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-5 5"/></svg>
-          <span>Bar interior — the taps</span>
+        <div class="gallery-tile gallery-tile--wide">
+          <img src="assets/img/gallery/croc-1.webp" alt="Crocodilos bar interior, counter and taps with seating" loading="lazy" />
         </div>
-        <div class="gallery-tile" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-5 5"/></svg>
-          <span>The bottleshop wall</span>
+        <div class="gallery-tile">
+          <img src="assets/img/gallery/croc-2.webp" alt="Bottleshop fridges and seating area" loading="lazy" />
         </div>
-        <div class="gallery-tile" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-5 5"/></svg>
-          <span>Seating &amp; crowd</span>
+        <div class="gallery-tile">
+          <img src="assets/img/gallery/croc-3.webp" alt="Lucky cat figurine and tap handles at the bar" loading="lazy" />
         </div>
-        <div class="gallery-tile" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-5 5"/></svg>
-          <span>Storefront, day</span>
+        <div class="gallery-tile">
+          <img src="assets/img/gallery/croc-5.webp" alt="A beer, hot dog and bowl of chips on the bar" loading="lazy" />
         </div>
-        <div class="gallery-tile gallery-tile--wide" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-5 5"/></svg>
-          <span>Storefront, night</span>
+        <div class="gallery-tile gallery-tile--wide">
+          <img src="assets/img/gallery/croc-4.webp" alt="A packed night at Crocodilos" loading="lazy" />
+        </div>
+        <div class="gallery-tile">
+          <img src="assets/img/gallery/croc-6.webp" alt="BrewDog cans on the bar with the house crocodile toy" loading="lazy" />
+        </div>
+        <div class="gallery-tile">
+          <img src="assets/img/gallery/croc-7.webp" alt="Tap list chalkboards above the beer taps" loading="lazy" />
         </div>
       </div>
 
@@ -315,6 +324,7 @@
   </div>
 </footer>
 
+<script src="assets/js/hero-carousel.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
