@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://konmoschonis.github.io/crocodilos-website/sitemap.xml
